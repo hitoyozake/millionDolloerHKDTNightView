@@ -14,6 +14,9 @@ export const NavigationBar = ()=>{
                         <Nav.Link href="#home">
                         Home
                         </Nav.Link>
+                        <Nav.Link href="/#about">
+                            About Hakodate
+                        </Nav.Link>
                         <Nav.Link href="/#Link">
                             Link
                         </Nav.Link>

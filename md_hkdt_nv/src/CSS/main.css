@@ -5,3 +5,29 @@
 .leftside {
     text-align: left;
 }
+
+.carouselStyle {
+    height: 100%;
+    width: 100%;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-item .img-fluid {
+    width:100%;
+    height:auto;
+}
+
+.carousel .item {
+    width: 100%;
+    height: auto;
+  }
+  
+.carousel-indicators  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
