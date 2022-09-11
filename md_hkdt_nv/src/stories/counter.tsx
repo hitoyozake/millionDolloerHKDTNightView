@@ -1,11 +1,16 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
+interface CounterProps {
+    value: number
+}
 
-export const MyButton= ()=>{
+export const Counter = (props: CounterProps)=>{
     return (
-        <Button>
-            push me
-        </Button>
+        <>
+        <h1 className="display-1 leftside lead">
+            {props.value.toLocaleString()}
+        </h1>
+        </>
     )
 }

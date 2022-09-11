@@ -1,15 +1,15 @@
-import {MyButton} from "./counter"
+import {Counter} from "./counter"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 export default {
-    title: "MyButton",
-    component: MyButton,
+    title: "FormatedCounter",
+    component: Counter,
 
     argTypes:{}
-} as ComponentMeta<typeof MyButton>
+} as ComponentMeta<typeof Counter>
 
-const Template: ComponentStory<typeof MyButton> = (args=> <MyButton />)//(args=> <MyButton {...args} />)
+const Template: ComponentStory<typeof Counter> = (args=> <Counter {...args}/>)//(args=> <MyButton {...args} />)
 
-export const MyButtonPage = Template.bind({})
+export const MyCounter = Template.bind({})
 
-MyButtonPage.args = {}
+MyCounter.args = {value:1200.0}
