@@ -26,8 +26,8 @@
     height: auto;
   }
   
-.carousel-indicators  li {
-    width: 10px;
-    height: 10px;
+  .carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
 }

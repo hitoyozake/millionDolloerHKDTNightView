@@ -30,7 +30,7 @@ function App() {
               </h6>
             </Col>
             <Col className="col-md-auto">
-              <Counter value={142.50 * million} />
+              <Counter value={142.54 * million} />
             </Col>
             <Col className="col-md-1">
               <h6>
@@ -38,17 +38,20 @@ function App() {
               </h6>
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center d-flex">
             <Col>
                 <div id="carouselSlidesx" className="carousel slide" data-ride="carousel" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol className="carousel-indicators">
+                  <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="0" className="active"></button>
+                  <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="1"></button>
                 </ol>
                   <div className="carousel-inner">
                       <div className="carousel-item active">
                         <img src="image/The_night_view_from_Mt_Hakodate_1MB.jpg" 
-                          className="img-fluid rounded mx-auto b-block img-fluid" 
-                          alt="Mt.Hakodate's night view"/>
+                          className="rounded mx-auto b-block img-fluid" 
+                          alt="Mt.Hakodate's night view" />
                       </div>
+                      
                       <div className="carousel-item">
                         <Graph></Graph>
                       </div>

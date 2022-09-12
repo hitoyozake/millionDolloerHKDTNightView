@@ -7,12 +7,13 @@ Chart.register(CategoryScale);
 const options: {} = {
     responsive: true,
     maintainAspectRatio: true,
+    aspectRatio: 832.0/552.0,
+
     layout:{
-        padding: 30.0
     },
     legend:{
-        display: false,
-        position: "right"
+        //display: false,
+        //position: "right"
     },
     scales: {
         "y": {
@@ -30,20 +31,23 @@ export const Graph = ()=>{
             {   
                 label: "Doll/JPY",
                 data: [
-                    140.49,
                     140.44,
                     143.15,
                     144.45,
                     143.86,
-                    142.50
+                    142.50,
+                    142.54
                 ],
-                borderColor: "rgb(75, 180, 190)"
+                borderColor: "rgb(75, 180, 190)",
+                fillColor: "rgb(151,187,205)"
             }
         ]
     }
-    return <Line 
-        data = {graphData}
-        options={options}
-        id="chart-key"
-    />
+    return ( 
+                <Line 
+                data = {graphData}
+                options={options}
+                id="chart-key"
+            />
+        )
 }
