@@ -1,5 +1,10 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css'; // これが必須
+import 'jquery/src/jquery.js'
+import 'popper.js/dist/popper-utils'
+import 'bootstrap/dist/js/bootstrap'
 import './App.css';
+
 import {Container, Row, Col} from 'react-bootstrap'
 import { Counter } from './stories/counter';
 import "./CSS/main.css"
@@ -12,6 +17,8 @@ const million = 1000000;
 
 function App() {
   return (
+    <>
+ 
       <Container className="container-m">
         {
           //align-items-end == 下寄せ
@@ -34,13 +41,15 @@ function App() {
           <Row className="justify-content-center">
             <Col>
                 <div id="carouselSlidesx" className="carousel slide" data-ride="carousel" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                </ol>
                   <div className="carousel-inner">
-                      <div className="carousel-item">
+                      <div className="carousel-item active">
                         <img src="image/The_night_view_from_Mt_Hakodate_1MB.jpg" 
                           className="img-fluid rounded mx-auto b-block img-fluid" 
                           alt="Mt.Hakodate's night view"/>
                       </div>
-                      <div className="carousel-item active">
+                      <div className="carousel-item">
                         <Graph></Graph>
                       </div>
                   </div>
@@ -62,6 +71,7 @@ function App() {
           </Row>
         
       </Container>
+      </>
   );
 }
 
