@@ -45,15 +45,14 @@ function App() {
                   <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="0" className="active"></button>
                   <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="1"></button>
                 </ol>
-                  <div className="carousel-inner">
+                  <div className="carousel-inner" role="listbox" >
                       <div className="carousel-item active">
                         <img src="image/The_night_view_from_Mt_Hakodate_1MB.jpg" 
-                          className="rounded mx-auto b-block img-fluid" 
+                          className="rounded mx-auto b-block img-fluid w-100" 
                           alt="Mt.Hakodate's night view" />
                       </div>
-                      
                       <div className="carousel-item">
-                        <Graph></Graph>
+                        <Graph height='640px'/>
                       </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselSlidesx" data-bs-slide="prev">

@@ -6,8 +6,8 @@ Chart.register(CategoryScale);
 
 const options: {} = {
     responsive: true,
-    maintainAspectRatio: true,
-    aspectRatio: 832.0/552.0,
+    maintainAspectRatio: false,
+    //aspectRatio: 832.0/552.0,
 
     layout:{
     },
@@ -17,14 +17,18 @@ const options: {} = {
     },
     scales: {
         "y": {
-            grace: 0.5
+            grace: 1.0
         }
 
     }
    
   };
 
-export const Graph = ()=>{
+export interface GraphProps {
+    height: string
+}
+
+export const Graph = (props:GraphProps)=>{
     const graphData = {
         labels:[ "9/6", "9/7", "9/8", "9/9", "9/10", "9/11"],
         datasets:[
@@ -48,6 +52,7 @@ export const Graph = ()=>{
                 data = {graphData}
                 options={options}
                 id="chart-key"
+                height={props.height}
             />
         )
 }
