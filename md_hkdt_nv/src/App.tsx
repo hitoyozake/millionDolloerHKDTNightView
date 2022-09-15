@@ -30,7 +30,7 @@ function App() {
               </h6>
             </Col>
             <Col className="col-md-auto">
-              <Counter value={142.54 * million} />
+              <Counter value={143.45 * million} />
             </Col>
             <Col className="col-md-1">
               <h6>
@@ -38,21 +38,61 @@ function App() {
               </h6>
             </Col>
           </Row>
-          <Row className="justify-content-center d-flex">
+          <Row className="margin-m  justify-content-center d-flex">
             <Col>
                 <div id="carouselSlidesx" className="carousel slide" data-ride="carousel" data-bs-ride="carousel">
                 <ol className="carousel-indicators">
                   <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="0" className="active"></button>
                   <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="1"></button>
+                  <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="2"></button>
+                  <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="3"></button>
+                  <button type="button"  data-bs-target="#carouselSlidesx" data-bs-slide-to="4"></button>
                 </ol>
                   <div className="carousel-inner" role="listbox" >
                       <div className="carousel-item active">
                         <img src="image/The_night_view_from_Mt_Hakodate_1MB.jpg" 
                           className="rounded mx-auto b-block img-fluid w-100" 
                           alt="Mt.Hakodate's night view" />
+                          <div className="carousel-caption d-none d-md-block carousel-caption-bottom">
+                            <h1 className="display-1 h1-custom">実はここ函館</h1>
+                          </div>
                       </div>
                       <div className="carousel-item">
                         <Graph height='640px'/>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h1 className="display-1 h1-custom4">その景色 時価</h1>
+                          </div>
+                        <div className="carousel-caption d-none d-md-block carousel-caption-top carousel-caption-right">
+                            <h5 className="h4-custom">2008年よりも190%<br></br>以上↑↑<br></br>すごい↑↑</h5>
+                        </div>
+                      </div>
+                      <div className="carousel-item">
+                        <img src="image/The_Hokkaido_Shinkansen.jpg" 
+                          className="rounded mx-auto b-block img-fluid w-100" 
+                          alt="Mt.Hakodate's night view" />
+                          <div className="carousel-caption d-none d-md-block carousel-caption-left carousel-caption-top">
+                            <h1 className="display-1 h1-custom-t2">5駅隣東京<br></br>スイスイ</h1>
+                          </div>
+                      </div>
+                      <div className="carousel-item">
+                        <img src="image/Kanemori_Red_Brick_Warehouse-2.jpg" 
+                          className="rounded mx-auto b-block img-fluid w-100" 
+                          alt="Mt.Hakodate's night view" />
+                          <div className="carousel-caption d-none d-md-block carousel-caption-right carousel-caption-bottom">
+                            <h1 className="display-1 h1-custom2">スタバも<br>
+                            </br>ファミマも
+                            <br></br>全部</h1>
+                          </div>
+                      </div>
+                      <div className="carousel-item">
+                        <img src="image/Goryokaku_Park-1.jpg" 
+                          className="rounded mx-auto b-block img-fluid w-100" 
+                          alt="Mt.Hakodate's night view" />
+                          <div className="carousel-caption d-none d-md-block carousel-caption-right carousel-caption-bottom">
+                            <h1 className="display-1 h1-custom3">素晴らしい<br>
+                            </br>見晴らしを。
+                            </h1>
+                          </div>
                       </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselSlidesx" data-bs-slide="prev">

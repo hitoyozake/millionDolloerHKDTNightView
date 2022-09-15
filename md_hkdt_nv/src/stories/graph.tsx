@@ -30,17 +30,19 @@ export interface GraphProps {
 
 export const Graph = (props:GraphProps)=>{
     const graphData = {
-        labels:[ "9/6", "9/7", "9/8", "9/9", "9/10", "9/11"],
+        labels:[ "9/6", "9/7", "9/8", "9/9", "9/12", "9/13", "9/14", "9/15"],
         datasets:[
             {   
                 label: "Doll/JPY",
                 data: [
                     140.44,
                     143.15,
-                    144.45,
+                    141.45,
                     143.86,
                     142.50,
-                    142.54
+                    142.34,
+                    144.5,
+                    143.45
                 ],
                 borderColor: "rgb(75, 180, 190)",
                 fillColor: "rgb(151,187,205)"

@@ -1,5 +1,9 @@
 .container-m {
-    margin-top: 4rem;
+    margin-top: 6rem;
+}
+
+.margin-m{
+    margin-top: 1rem;
 }
 
 .leftside {
@@ -30,3 +34,82 @@
     height: 12px;
     border-radius: 100%;
 }
+
+.h1-custom {
+    font-size: 6rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .h4-custom {
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .h1-custom2 {
+    
+    font-size: 6rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #b1edbe, #73f9b6 20%, #03dd36 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .h1-custom3 {
+    font-size: 6rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #031467, #5371ec 20%, #1467e2 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .h1-custom4 {
+    font-size: 6rem;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #ee54ff, #92a2ff 20%, #a538e9 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  .carousel-caption-top{
+    bottom: auto;
+    top: 2rem;
+  }
+
+  .carousel-caption-bottom{
+    bottom: 2rem;
+    top: auto;
+  }
+  .carousel-caption-right {
+    left: auto;
+    right: 2rem;
+  }
+
+
+  .carousel-caption-left {
+    left: 2rem;
+    right: auto;
+  }
+
+
+  .h1-custom-t2 {
+    font-size: 6rem;
+    font-weight: bold;
+    vertical-align: top;
+    display: inline-block;
+    background: linear-gradient(45deg, #54d0ff, #9f92ff 20%, #ff7689 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
